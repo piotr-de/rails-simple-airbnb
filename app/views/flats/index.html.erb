@@ -1,4 +1,8 @@
 <h1>All our flats</h1>
+<% if params[:query] %>
+<% @flats = Flat.where("name LIKE '#{params[:query]}'") %>
+<% end %>
+
 <p>All <%= @flats.count %> flats</p>
 <div class="cards">
   <% @flats.each do |flat| %>
