@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container border p-3">
+      <div class="row">
+        <div class="col-6">
+          <%= link_to "AirBnB Lite", flats_path %>
+        </div>
+        <div class="col-6 text-right">
+          <%= link_to "Add Flat", new_flat_path, class: "btn btn-primary" %>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
   </body>
 </html>

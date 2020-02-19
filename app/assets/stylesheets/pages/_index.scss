@@ -1,2 +1,23 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+width: 100%;
+padding: 10px;
+}
+
+.card-img {
+  width: 90%;
+  height: 250px;
+}
+
+.img-lg {
+  width: 400px;
+  height: 300px;
+}
