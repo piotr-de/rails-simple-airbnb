@@ -18,7 +18,7 @@
         </div>
         <div class="col-6 text-right">
           <form action="/flats" style="display: inline;">
-            <input type="text" name="query" value=<%= params[:query] %>>
+            <input type="text" name="query" value="<%= params[:query] %>">
             <input type="submit" class="btn btn-success" value="Submit">
           </form>
           <%= link_to "Add Flat", new_flat_path, class: "btn btn-primary" %>
